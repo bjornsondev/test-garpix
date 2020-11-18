@@ -1,4 +1,5 @@
 import { Redirect, Route, Switch } from 'react-router-dom';
+import PartnersPage from './pages/PartnersPage/PartnersPage';
 
 
 function Routes(props){
@@ -27,7 +28,7 @@ function Routes(props){
       <Route path ="/how-to-enter" 
           render={() => <h1 className="container">Как подключиться</h1>}/>
       <Route path ="/partners" 
-          render={() => <h1 className="container">Партнеры</h1>}/>
+          render={() => <PartnersPage/>}/>
       <Route path ="/offer" 
           render={() => <h1 className="container">Предложение</h1>}/>
     </Switch>

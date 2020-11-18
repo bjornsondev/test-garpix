@@ -11,8 +11,8 @@ import UserNav from './UserNav/UserNav';
 function Header(props){
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
 
-  let activeBurger = isOpenMobileMenu ? s.closeMenu : "",
-      mobileMenuActive = isOpenMobileMenu ? s.mobileMenuActive : "";
+  let activeBurgerStyle = isOpenMobileMenu ? s.closeMenu : "",
+      mobileMenuActiveStyle = isOpenMobileMenu ? s.mobileMenuActive : "";
 
   return (
     <header className={s.header}>
@@ -21,7 +21,7 @@ function Header(props){
           <img src={logoSpasibo} alt="Спасибо от Сбербанка"/>
         </NavLink>
         
-        <div className={s.wrapperMobileMenu + " " + mobileMenuActive}>
+        <div className={s.wrapperMobileMenu + " " + mobileMenuActiveStyle}>
           <nav className={s.siteNav}>
             <SiteNavLinks/>
           </nav>
@@ -32,7 +32,7 @@ function Header(props){
         </div>
 
         <button 
-          className={s.burgerMenu + " " + activeBurger}
+          className={s.burgerMenu + " " + activeBurgerStyle}
           onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)}  
         >
           <span></span>

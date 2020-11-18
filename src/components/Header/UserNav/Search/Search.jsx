@@ -4,7 +4,7 @@ import s from './Search.module.scss';
 
 function Search(props){
   const [isSearchActive, setIsSearchActive] = useState(false);
-
+  const [searchInputValue, setSearchInputValue] = useState("");
   return (
     <div className={s.search}>
       <button 
@@ -23,6 +23,8 @@ function Search(props){
             type="search" 
             className={s.searchActiveInput} 
             placeholder="Поиск" 
+            value={searchInputValue}
+            onChange={ (e) => setSearchInputValue(e.currentTarget.value)}
             onBlur={() => setIsSearchActive(false)}
             autoFocus
           />

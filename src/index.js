@@ -9,7 +9,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter> {/* Временно для gh-pages */}
+    <HashRouter> {/* HashRouter Временно для gh-pages */}
       <Provider store={store}>
         <App />
       </Provider>
@@ -17,3 +17,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+// "homepage": "http://bjornsondev.github.io/test-garpix",

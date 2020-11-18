@@ -1,0 +1,17 @@
+.pageTitle {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.categoryList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 900px;
+  margin: 0 auto;
+  :global {
+    * {
+      user-select: none;
+    }
+  }
+}

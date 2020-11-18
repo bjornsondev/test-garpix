@@ -1,7 +1,5 @@
-import { SET_CITY_LIST } from "../../../constants/constants";
-import { SET_CURRENT_CITY } from "../../../constants/constants";
-import { SET_IS_CITY_MODAL_OPEN } from "../../../constants/constants";
-import { SET_IS_ACCEPTANCE_MODAL } from "../../../constants/constants";
+import { SET_CITY_LIST, SET_IS_CITY_MODAL_OPEN,
+         SET_CURRENT_CITY, SET_IS_ACCEPTANCE_MODAL } from "../../../constants/constants";
 
 const initialState = {
   currentCity: "",

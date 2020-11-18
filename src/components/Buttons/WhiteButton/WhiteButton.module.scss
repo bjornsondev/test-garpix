@@ -1,0 +1,18 @@
+
+.btn {
+  background-color: #fff;
+  color: #000;
+
+  &:hover {
+    background-color: #00D36D;
+    color: #fff;
+  }
+  
+  &:active {
+    opacity: .5;
+  }
+  &:global.active {
+    background-color: #00D36D;
+    color: #fff;
+  }
+}
