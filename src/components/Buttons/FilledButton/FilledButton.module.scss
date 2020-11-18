@@ -1,0 +1,12 @@
+.btn {
+  background-color: #00D36D;
+  color: #fff;
+
+  &:hover {
+    background-color: #00a857;
+  }
+  
+  &:active {
+    opacity: .5;
+  }
+}
