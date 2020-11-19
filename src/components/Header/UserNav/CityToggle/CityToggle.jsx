@@ -1,4 +1,4 @@
-import React, { useEffect }  from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import setHeaderCityList from '../../../../store/actions/Header/setCityList';
@@ -12,28 +12,27 @@ import ModalCityList from './ModalCityList';
 
 
 function CityToggle(props){
-
   const dispatch = useDispatch();
   const state = useSelector( state => state.cityToggle);
   
+  const setModalOpen = () => {
+    dispatch(setIsCityModalOpen(!state.isCityModalOpen));
+  }
+
   useEffect( () => {
     dispatch(setHeaderCityList());
   }, []);
 
-  const setModalOpen = (toggle) => {
-    dispatch(setIsCityModalOpen(!state.isCityModalOpen));
-  }
-
+  
   return (
     <div className={s.cityToggle}>
       <button 
         className={s.cityToggleOpenButton} 
         onClick={setModalOpen}
-      >
-        {state.currentCity}
-      </button>
+      >{state.currentCity}</button>
 
-      {state.isCityModalOpen && 
+      {
+        state.isCityModalOpen && 
         <div className={s.modal}>
           {state.isAcceptanceModal ? <ModalAcceptance /> : <ul><ModalCityList /></ul>}
         </div>

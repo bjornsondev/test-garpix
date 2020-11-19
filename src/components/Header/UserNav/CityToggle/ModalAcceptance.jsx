@@ -14,25 +14,23 @@ function ModalAcceptance(props){
   const setAcceptanceModal = () => {
     dispatch(setIsAcceptanceModal(false));
   },
-  setModalOpen = () => {
-    dispatch(setIsCityModalOpen(!state.isCityModalOpen))
-  }
+  setModalOpen = (toggle) => {
+    dispatch(setIsCityModalOpen(toggle))
+  };
+
   return (
     <>
       Ваш город - <span className={s.modalCurrentCity}>{ state.currentCity }</span>?
+
       <div className={s.modalAcceptanceButtons}>
         <FilledButton 
           onClick={() => setModalOpen(false)}
           className={s.modalAcceptButton}
-        >
-          Да
-        </FilledButton>
+        >Да</FilledButton>
         
         <StrokedButton
           onClick={() => setAcceptanceModal(false)}
-        >
-          Выберите город
-        </StrokedButton>
+        >Выберите город</StrokedButton>
       </div>
     </>
   )

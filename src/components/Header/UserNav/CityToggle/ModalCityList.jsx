@@ -14,15 +14,16 @@ function ModalCityList(props){
 
   const onCitySelect = (city) => {
     dispatch(setCurrentCity(city));
-    dispatch(setIsCityModalOpen(!state.isCityModalOpen));
+    dispatch(setIsCityModalOpen(false));
     dispatch(setIsAcceptanceModal(true));
   }
 
   return state.cityList.map( (e, i) => 
     <li className={s.modalListItem} key={i}>
-      <button className={s.modalListBtn} onClick={() => onCitySelect(e)}>
-        {e}
-      </button>
+      <button 
+        className={s.modalListBtn} 
+        onClick={() => onCitySelect(e)}
+      >{e}</button>
     </li>
   );
 };

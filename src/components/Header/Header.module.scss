@@ -80,7 +80,7 @@
     height: 100vh;
     padding: 30px 20px;
 
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.952);
     transition: right .5s ease-out;
   }
   .mobileMenuActive {
@@ -136,9 +136,4 @@
       }
     }
   } 
-  
-  
-  
-  
-  
 }

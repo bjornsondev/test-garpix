@@ -13,9 +13,7 @@ function LoginButton(props){
     <StrokedButton
       onClick={ () => setIsDefinedUser(!isDefinedUser) }
       className={s.loginButton}
-    >
-      {isDefinedUser ? "Выйти" : "Войти"}
-    </StrokedButton>
+    >{isDefinedUser ? "Выйти" : "Войти"}</StrokedButton>
   )
 };
 

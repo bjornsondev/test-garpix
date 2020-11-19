@@ -1,7 +1,9 @@
 import React from 'react';
 import PageHeading from '../../components/Headings/PageHeading/PageHeading';
 import CategoryItems from './CategoryItems/CategoryItems';
+import CategoryPartnersList from './CategoryPartnersList/CategoryPartnersList';
 import s from './PartnersPage.module.scss';
+import SpasiboTypeToggle from './SpasiboTypeToggle/SpasiboTypeToggle';
 
 
 
@@ -13,6 +15,10 @@ function PartnersPage(props){
       <ul className={s.categoryList}>
         <CategoryItems/>
       </ul>
+
+      <SpasiboTypeToggle/>
+
+      <CategoryPartnersList/>
     </div>
   )
 };

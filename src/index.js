@@ -9,7 +9,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter> {/* HashRouter Временно для gh-pages */}
+    <HashRouter> {/* HashRouter для gh-pages */}
       <Provider store={store}>
         <App />
       </Provider>
@@ -17,4 +17,11 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-// "homepage": "http://bjornsondev.github.io/test-garpix",
+
+
+
+
+
+
+// "homepage": "http://bjornsondev.github.io/test-garpix"
+// Путь для пакаге жсона

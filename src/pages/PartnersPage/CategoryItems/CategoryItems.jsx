@@ -1,61 +1,64 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import setCategoryList from '../../../store/actions/PartnersPage/setCategoryList';
-import setCurrentCategory from '../../../store/actions/PartnersPage/setCurrentCategory';
-import setFullCategoryList from '../../../store/actions/PartnersPage/setFullCategoryList';
-import setShortCategoryList from '../../../store/actions/PartnersPage/setShortCategoryList';
+import setCategoryList from '../../../store/actions/PartnersPage/Category/setCategoryList';
+import setCurrentCategory from '../../../store/actions/PartnersPage/Category/setCurrentCategory';
+
+import s from './CategoryItems.module.scss';
 
 import WhiteButton from '../../../components/Buttons/WhiteButton/WhiteButton';
-import s from './CategoryItems.module.scss';
+
+
 
 function CategoryItems(props){
   const state = useSelector( state => state.category);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(setCategoryList())
-  }, []);
-
+  const [isFullCategories, setIsFullCategories] = useState(false);
+  
   const setActiveCategory = (id) =>{
-    dispatch(setCurrentCategory(id))
-  },
-
-  setFullCategory = () => {
-    dispatch(setFullCategoryList())
-  },
-
-  setShortCategory = () => {
-    dispatch(setShortCategoryList())
+    dispatch(setCurrentCategory(id)); 
   };
 
-  const items = state.categoryList.map( e => {
-    let buttonActiveStyle = e.isCurrent ? "active" : "";
+  useEffect( () => {
+    dispatch(setCategoryList(isFullCategories));
+  }, [isFullCategories]);
+
+  {/* Допустим в админке есть возможность выставлять самому первые 7 категорий
+      ну для маркетинга мб нужен такой функционал, мы сначала получаем список
+      этих категорий, он приходит как listShort допустим, при клике на точки, 
+      мы получаем listFull, который уже разворачивает полный список категорий */}
+
+  const items = state.categories.map( e => {
+    let buttonActiveStyle = state.currentCategory === e.id ? "active" : "";
      return(
-      <li key={e.id} className={s.categoryListItem}>
+      <li key={e.id} className={s.categoriesItem}>
         <WhiteButton 
           onClick={() => setActiveCategory(e.id)} 
-          className={buttonActiveStyle + " " + s.categoryListButton}
-        >
-          {e.name}
-        </WhiteButton>
+          className={buttonActiveStyle + " " + s.categoriesButton}
+        >{e.name}</WhiteButton>
       </li>
     )
   })
+
+
   return (
     <>
       {items}
-      <li key="1003" className={s.categoryListItem}>
-      { !state.isFullCategoryList 
-        ? <WhiteButton 
-            onClick={setFullCategory} 
-            className={s.categoryListButton}
-          >⋯</WhiteButton>
-        : <WhiteButton
-            onClick={setShortCategory}
-            className={s.categoryListButton}
-          >╳</WhiteButton>
-      }
+      
+      <li key="showAll" className={s.categoriesItem}>
+        { 
+          !state.isFullCategories 
+          ? <WhiteButton 
+              onClick={() => setIsFullCategories(true)} 
+              className={s.categoriesButton}
+            >⋯</WhiteButton>
+
+          : <WhiteButton
+              onClick={() => setIsFullCategories(false)}
+              className={s.categoriesButton}
+            >╳</WhiteButton>
+        }
       </li>
     </>
   );

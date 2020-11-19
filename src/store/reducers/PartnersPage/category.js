@@ -1,8 +1,11 @@
-const { SET_CATEGORY_LIST, SET_CURRENT_CATEGORY, SET_FULL_CATEGORY_LIST, SET_SHORT_CATEGORY_LIST } = require("../../../constants/constants");
+const { SET_CATEGORY_LIST, SET_CURRENT_CATEGORY, SET_PARTNERS_LIST, SET_SPASIBO_TYPE } = require("../../../constants/constants");
 
 const initialState = {
-  categoryList: [],
-  isFullCategoryList: false
+  categories: [],
+  partnersList: [],
+  isFullCategories: false,
+  isTakeInToggle: false, 
+  currentCategory: "all"
 }
 
 function category(state = initialState, action) {
@@ -10,33 +13,34 @@ function category(state = initialState, action) {
     case SET_CATEGORY_LIST: 
       return {
         ...state,
-        categoryList: action.categoryList
+        categories: action.categories,
+        isFullCategories: action.isFullCategories
       }
       
     case SET_CURRENT_CATEGORY: 
       return {
         ...state,
-        categoryList: state.categoryList.map( e => { // В экшне можно сделать запрос по текущей категории
-          let newEl = {...e};
-          e.id === action.id ? newEl.isCurrent = true : newEl.isCurrent = false;
-          return newEl;
-        })
+        categories: state.categories.map( e => {
+          e.id === action.category ? e.isCurrent = true : e.isCurrent = false;
+          return e; // Выглядит как костыль, надо что получше придумать
+        }),
+        currentCategory: action.category
       }
 
-    case SET_FULL_CATEGORY_LIST: 
+    case SET_SPASIBO_TYPE: {
       return {
-        ...state,
-        categoryList: [...state.categoryList, ...action.fullList],
-        isFullCategoryList: true
+        ...state, 
+        isTakeInToggle: action.toggle
       }
+    }
 
-    case SET_SHORT_CATEGORY_LIST: 
+    case SET_PARTNERS_LIST: {
       return {
-        ...state,
-        categoryList: [...state.categoryList.slice(0, 9)],
-        isFullCategoryList: false
+        ...state, 
+        partnersList: action.partnersList
       }
-      
+    }
+
     default: 
       return state;
   }

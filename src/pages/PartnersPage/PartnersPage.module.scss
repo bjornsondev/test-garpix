@@ -8,10 +8,21 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
+
   :global {
     * {
       user-select: none;
     }
+  }
+}
+
+@media(max-width: 768px) {
+  .categoryList {
+    width: auto;
+  }
+  .pageTitle {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }

@@ -9,11 +9,15 @@
 }
 .cityToggleOpenButton {
   position: relative;
+  
   padding-left: 30px;
+
   border: none;
-  text-align: right;
   background-color: transparent;
+
+  text-align: right;
   font-size: 14px;
+
   opacity: .5;
   transition: .3s;
 
