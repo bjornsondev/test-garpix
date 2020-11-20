@@ -5,7 +5,8 @@ const initialState = {
   partnersList: [],
   isFullCategories: false,
   isTakeInToggle: false, 
-  currentCategory: "all"
+  currentCategory: "all",
+  currentCategoryName: "Все партнеры"
 }
 
 function category(state = initialState, action) {
@@ -24,7 +25,8 @@ function category(state = initialState, action) {
           e.id === action.category ? e.isCurrent = true : e.isCurrent = false;
           return e; // Выглядит как костыль, надо что получше придумать
         }),
-        currentCategory: action.category
+        currentCategory: action.category,
+        currentCategoryName: action.categoryName
       }
 
     case SET_SPASIBO_TYPE: {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PartnerCard from '../../../components/PartnerCard/PartnerCard';
-import setPartnersList from '../../../store/actions/PartnersPage/setPartnersList';
+import setPartnersList from '../../../store/actions/PartnersPage/Category/setPartnersList';
 import s from './CategoryPartnersList.module.scss';
 import correctEndings from '../../../helpers/correctEndings'
 import FilledButton from '../../../components/Buttons/FilledButton/FilledButton';

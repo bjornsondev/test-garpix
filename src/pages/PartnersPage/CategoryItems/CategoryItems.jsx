@@ -7,6 +7,7 @@ import setCurrentCategory from '../../../store/actions/PartnersPage/Category/set
 import s from './CategoryItems.module.scss';
 
 import WhiteButton from '../../../components/Buttons/WhiteButton/WhiteButton';
+import category from '../../../store/reducers/PartnersPage/category';
 
 
 
@@ -16,8 +17,8 @@ function CategoryItems(props){
 
   const [isFullCategories, setIsFullCategories] = useState(false);
   
-  const setActiveCategory = (id) =>{
-    dispatch(setCurrentCategory(id)); 
+  const setActiveCategory = (id, name) =>{
+    dispatch(setCurrentCategory(id, name)); 
   };
 
   useEffect( () => {
@@ -34,7 +35,7 @@ function CategoryItems(props){
      return(
       <li key={e.id} className={s.categoriesItem}>
         <WhiteButton 
-          onClick={() => setActiveCategory(e.id)} 
+          onClick={() => setActiveCategory(e.id, e.name)} 
           className={buttonActiveStyle + " " + s.categoriesButton}
         >{e.name}</WhiteButton>
       </li>
@@ -56,7 +57,7 @@ function CategoryItems(props){
 
           : <WhiteButton
               onClick={() => setIsFullCategories(false)}
-              className={s.categoriesButton}
+              className={s.categoriesButton + " " + s.categoriesShowLessButton}
             >╳</WhiteButton>
         }
       </li>

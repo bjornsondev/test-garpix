@@ -1,5 +1,5 @@
-import { SET_PARTNERS_LIST } from '../../../constants/constants';
-import getPartners from '../../../FakeDB/getPartners';
+import { SET_PARTNERS_LIST } from '../../../../constants/constants';
+import getPartners from '../../../../FakeDB/getPartners';
 
 export default function setPartnersList(category, toggle) {
   let partnersList = getPartners();

@@ -1,0 +1,25 @@
+.card {
+  max-width: 420px;
+}
+.cardInfo {
+  margin-top: 5px;
+}
+
+.cardThumbnail {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50px;
+  float: left;
+}
+
+.cardPartner {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: .5;
+}
+
+.cardText {
+  font-size: 18px;
+}

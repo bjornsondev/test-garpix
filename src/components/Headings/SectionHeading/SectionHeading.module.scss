@@ -1,0 +1,13 @@
+.sectionHeading {
+  width: 100%;
+  
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+@media(max-width: 768px) {
+  .sectionHeading {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,37 @@
+.offersList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 32%;
+
+  &:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+.showMore {
+  width: 220px;
+  height: 48px;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media(max-width: 768px) {
+  .showMore {
+    width: 170px;
+    height: 36px;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  .card {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  
+  }
+}
