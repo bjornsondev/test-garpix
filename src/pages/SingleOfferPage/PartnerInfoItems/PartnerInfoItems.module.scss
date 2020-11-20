@@ -1,0 +1,60 @@
+.item {
+  display: flex;
+  border: 1px dashed #000; // Dotted отрисовывается не корректно, либо это только у меня на экране так
+  border-radius: 8px;
+  line-height: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  &:hover {
+    border: 1px solid #00D36D;
+    transition: .3s;
+  }
+}
+.thumb {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+.metroStation1, .metroStation2 {
+  padding-left: 25px;
+  margin-right: 15px;
+  position: relative;
+  &::before {
+    content: "";
+  
+    position: absolute;
+  
+    top: 0;
+    left: 0;
+  
+    height: 20px;
+    width: 20px;
+  
+    background-image: url(../../../assets/images/moscow-metro-logo1.png);
+  }
+  
+}
+
+.metroStation2 {
+ &::before {
+  background-image: url(../../../assets/images/moscow-metro-logo2.png);
+ }
+}
+
+.partnerInfoString {
+  display: block;
+}
+.partnerSiteLink {
+  display: block;
+  width: fit-content;
+  line-height: 1.2rem;
+  color: #00D36D;
+  border-bottom: 1px solid #00d36d3f;
+}
+.yaMapLink {
+  line-height: 1.2rem;
+  font-size: 12px;
+  float: right;
+  opacity: 0.5;
+  border-bottom: 1px solid #000000cc;
+}

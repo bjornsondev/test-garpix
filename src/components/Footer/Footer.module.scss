@@ -1,0 +1,105 @@
+.footer {
+  margin-top: 160px;
+  padding: 40px 0;
+  background-color: #ffffff;
+  :global {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.footerLeft {
+  width: 278px;
+  margin-right: 20px;
+}
+
+.footerHotPhone {
+  display: block;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.footerFaintText {
+  opacity: 0.5;
+  font-weight: 14;
+}
+
+.footerSberLogo {
+  display: block;
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+
+.footerRight {
+  width: 900px;
+}
+
+.footerSiteNav {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 46px;
+}
+.footerSocialLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.footerPlatforms {
+  display: flex;
+   img {
+     margin-right: 10px;
+   }
+}
+
+.footerSocials {
+  img {
+    margin-left: 10px;
+    border-radius: 8px;
+  }
+  img:first-child {
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 768px) {
+  .footer {
+    margin-top: 60px;
+  }
+  .footerLeft {
+    width: 30%;
+  }
+  .footerSberLogo {
+    margin-top: 28px;
+    margin-bottom: 12px;
+  }
+  .footerRight {
+    width: 70%;
+  }
+  .footerSiteNav { // А зачем они если есть бургер
+    display: none;
+  }
+  .footerSocialLinks {
+    margin-top: 0;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .footerPlatforms {
+    img {
+      width: 40%;
+    }
+  }
+  .footerSocials {
+    margin-top: 20px;
+    img {
+      width: 35px;
+    }
+  }
+  .footerFaintText {
+    font-size: 12px;
+  }
+}

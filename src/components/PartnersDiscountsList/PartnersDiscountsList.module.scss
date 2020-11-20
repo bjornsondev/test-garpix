@@ -1,0 +1,98 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 420px;
+  height: 160px;
+  margin: 0 auto;
+
+  border-radius: 5000px; // на всякий случай
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+.item {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+}
+
+.itemDiscount {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50px;
+  background-color: #000;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 42px;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  &::before, &::after {
+    content: "";
+  
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -20px;
+  
+    height: 42px;
+    width: 55px;
+  
+    background-image: url(../../assets/images/partnersDiscountsClipShape.svg);
+  }
+  &::after {
+    left: auto;
+    right: -20px;
+    transform: scaleX(-1);
+  }
+}
+
+@media(max-width: 768px) {
+  .list {
+    min-width: 320px;
+    height: 100px;
+    padding: 10px;
+  }
+  .item {
+    width: 55px;
+    height: 55px;
+  }
+  .text {
+    font-size: 14px;
+    max-width: 200px;
+    text-align: center;
+  }
+  .itemDiscount {
+    top: -15px;
+    right: -20px;
+  
+    width: 40px;
+    height: 40px;
+  
+    font-size: 12px;
+  }
+}

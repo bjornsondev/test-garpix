@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 10;
   display: flex;
   align-items: center;
   height: 116px;
@@ -19,13 +21,14 @@
 }
 
 .siteNav {
+  width: 750px;
+}
+.siteNavList {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 750px;
   line-height: 40px;
 }
-
 .userNav {
   display: flex;
   justify-content: flex-end;
@@ -57,12 +60,14 @@
   }
 
   .siteNav {
-    width: 100%;
     order: 2;
+    width: 100%;
+    
+  }
+  .siteNavList {
     flex-direction: column;
     align-items: flex-end;
   }
-
   .userNav {
     width: 100%;
     order: 1;

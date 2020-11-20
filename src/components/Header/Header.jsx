@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import s from './Header.module.scss';
 import logoSpasibo from '../../assets/images/logoSpasibo.png'
 
-import SiteNavLinks from './SiteNavLinks/SiteNavLinks';
+import SiteNavLinks from '../SiteNavLinks/SiteNavLinks';
 import UserNav from './UserNav/UserNav';
 
 
@@ -13,7 +13,7 @@ function Header(props){
 
   let activeBurgerStyle = isOpenMobileMenu ? s.closeMenu : "",
       mobileMenuActiveStyle = isOpenMobileMenu ? s.mobileMenuActive : "";
-
+  
   return (
     <header className={s.header}>
       <div className="container">
@@ -23,7 +23,9 @@ function Header(props){
         
         <div className={s.wrapperMobileMenu + " " + mobileMenuActiveStyle}>
           <nav className={s.siteNav}>
-            <SiteNavLinks/>
+              <ul className={s.siteNavList}>
+                <SiteNavLinks/>
+              </ul>
           </nav>
 
           <nav className={s.userNav}>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import PageHeading from '../../components/Headings/PageHeading/PageHeading';
 import SectionHeading from '../../components/Headings/SectionHeading/SectionHeading';
-import OfferCard from '../../components/OfferCard/OfferCard';
+import PartnersDiscounts from './PartnersDiscounts/PartnersDiscounts';
 import CategoryItems from './CategoryItems/CategoryItems';
 import CategoryPartnersList from './CategoryPartnersList/CategoryPartnersList';
 import OffersList from './OffersList/OffersList';
@@ -28,11 +28,15 @@ function PartnersPage(props){
         <CategoryPartnersList/>
       </section>
 
-      <section className="offersList">
+      <section className={s.offersList}>
         <SectionHeading className={s.offersHeading}>
           3 предложения в категории «{state.category.currentCategoryName}»
         </SectionHeading>
         <OffersList/>
+      </section>
+
+      <section className="partnersDiscounts">
+        <PartnersDiscounts/>
       </section>
     </div>
   )

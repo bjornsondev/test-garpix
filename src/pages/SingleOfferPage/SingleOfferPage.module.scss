@@ -1,0 +1,91 @@
+.page {
+  padding-top: 70px;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  color: #7E7E7E;
+  text-align: center;
+  margin-bottom: 20px;
+  span {
+    cursor: pointer;
+    text-decoration: underline;
+  }  
+}
+
+.heading {
+  margin-bottom: 40px;
+}
+
+.partnerFullInfo {
+  background-color: #fff;
+  border-radius: 25px;
+  margin-bottom: 48px;
+}
+
+.dateFromTo {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  text-align: center;
+  opacity: .5;
+}
+.content {
+  padding: 40px;
+  font-size: 18px;
+  ul, ol {
+    margin-left: 40px;
+  }
+
+  ul li {
+    list-style: disc;
+  }
+
+  li {
+    margin-left: 1rem;
+    line-height: 2.5rem;
+  }
+
+  a {
+    color: #00D36D;
+    border-bottom: 1px solid #00d36d3f;
+  }
+}
+
+.partnerInfo {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 50px;
+  img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    border-radius: 70px;
+  }
+}
+
+
+.partnerInfoList {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width: 768px) {
+  .dateFromTo {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .content {
+    font-size: 14px;
+    padding: 20px;
+    li {
+      margin-left: 0;
+      line-height: 1.5rem;
+    }
+  }
+  .partnerInfoList {
+    flex-wrap: wrap;
+  }
+}

@@ -7,7 +7,6 @@ import setCurrentCategory from '../../../store/actions/PartnersPage/Category/set
 import s from './CategoryItems.module.scss';
 
 import WhiteButton from '../../../components/Buttons/WhiteButton/WhiteButton';
-import category from '../../../store/reducers/PartnersPage/category';
 
 
 

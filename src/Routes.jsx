@@ -1,5 +1,6 @@
 import { Redirect, Route, Switch } from 'react-router-dom';
 import PartnersPage from './pages/PartnersPage/PartnersPage';
+import SingleOfferPage from './pages/SingleOfferPage/SingleOfferPage';
 
 
 function Routes(props){
@@ -7,7 +8,7 @@ function Routes(props){
     <Switch>
       {/* У нас только две страницы, сразу на одну из них переключимся */}
       <Route exact path="/" 
-            render={ () => <Redirect to="/partners"/>}/>
+            render={ () => <Redirect to="/offer"/>}/>
 
       <Route path ="/discount" 
           render={() => <h1 className="container">Скидки и купоны</h1> }/>
@@ -29,8 +30,10 @@ function Routes(props){
           render={() => <h1 className="container">Как подключиться</h1>}/>
       <Route path ="/partners" 
           render={() => <PartnersPage/>}/>
+
+
       <Route path ="/offer" 
-          render={() => <h1 className="container">Предложение</h1>}/>
+          render={() => <SingleOfferPage/>}/>
     </Switch>
   )
 };

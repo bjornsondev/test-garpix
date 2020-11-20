@@ -1,0 +1,20 @@
+.longItems {
+  width: 680px;
+  margin: 0 auto 40px;
+}
+
+.smallItems {
+  display: flex;
+  justify-content: space-between;
+  width: 880px;
+  margin: 0 auto ;
+}
+.smallItem {
+  margin-bottom: 40px;
+}
+@media(max-width: 768px) {
+  .longItems, .smallItems {
+    flex-wrap: wrap;
+    width: 320px;
+  }
+}
