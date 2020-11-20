@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/test-garpix/static/css/main.acd612a7.chunk.css",
-    "main.js": "/test-garpix/static/js/main.5ff2bb25.chunk.js",
-    "main.js.map": "/test-garpix/static/js/main.5ff2bb25.chunk.js.map",
+    "main.css": "/test-garpix/static/css/main.f7cc02ce.chunk.css",
+    "main.js": "/test-garpix/static/js/main.d82cdfe9.chunk.js",
+    "main.js.map": "/test-garpix/static/js/main.d82cdfe9.chunk.js.map",
     "runtime-main.js": "/test-garpix/static/js/runtime-main.0ac8af68.js",
     "runtime-main.js.map": "/test-garpix/static/js/runtime-main.0ac8af68.js.map",
-    "static/js/2.aa87a878.chunk.js": "/test-garpix/static/js/2.aa87a878.chunk.js",
-    "static/js/2.aa87a878.chunk.js.map": "/test-garpix/static/js/2.aa87a878.chunk.js.map",
+    "static/js/2.57fcad8f.chunk.js": "/test-garpix/static/js/2.57fcad8f.chunk.js",
+    "static/js/2.57fcad8f.chunk.js.map": "/test-garpix/static/js/2.57fcad8f.chunk.js.map",
     "index.html": "/test-garpix/index.html",
-    "static/css/main.acd612a7.chunk.css.map": "/test-garpix/static/css/main.acd612a7.chunk.css.map",
-    "static/js/2.aa87a878.chunk.js.LICENSE.txt": "/test-garpix/static/js/2.aa87a878.chunk.js.LICENSE.txt",
+    "static/css/main.f7cc02ce.chunk.css.map": "/test-garpix/static/css/main.f7cc02ce.chunk.css.map",
+    "static/js/2.57fcad8f.chunk.js.LICENSE.txt": "/test-garpix/static/js/2.57fcad8f.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/test-garpix/static/media/Geometria-Regular.914be166.woff2",
     "static/media/blessYouLogo.42d4f1f6.png": "/test-garpix/static/media/blessYouLogo.42d4f1f6.png",
     "static/media/bookingCar.28388393.png": "/test-garpix/static/media/bookingCar.28388393.png",
@@ -17,7 +17,9 @@
     "static/media/CityToggle.module.scss": "/test-garpix/static/media/cityToggleIcon.35b30207.svg",
     "static/media/dishCenter.1390bcd5.png": "/test-garpix/static/media/dishCenter.1390bcd5.png",
     "static/media/eurowebBigImg.b30a0fc4.png": "/test-garpix/static/media/eurowebBigImg.b30a0fc4.png",
+    "static/media/fb.dff19c72.svg": "/test-garpix/static/media/fb.dff19c72.svg",
     "static/media/fiveLogo.948051d4.png": "/test-garpix/static/media/fiveLogo.948051d4.png",
+    "static/media/inst.e0368f86.svg": "/test-garpix/static/media/inst.e0368f86.svg",
     "static/media/iviLogo.17d7c03e.png": "/test-garpix/static/media/iviLogo.17d7c03e.png",
     "static/media/lamodaLogo.57ff0e2f.png": "/test-garpix/static/media/lamodaLogo.57ff0e2f.png",
     "static/media/litResLogo.c0f12dbe.png": "/test-garpix/static/media/litResLogo.c0f12dbe.png",
@@ -26,18 +28,23 @@
     "static/media/mvideoBigImg.fc497ab6.png": "/test-garpix/static/media/mvideoBigImg.fc497ab6.png",
     "static/media/mvideoThumbnail.0b375797.png": "/test-garpix/static/media/mvideoThumbnail.0b375797.png",
     "static/media/myToys.fba1aac8.png": "/test-garpix/static/media/myToys.fba1aac8.png",
+    "static/media/ok.4685cdbe.svg": "/test-garpix/static/media/ok.4685cdbe.svg",
     "static/media/ozonLogo.f118753a.png": "/test-garpix/static/media/ozonLogo.f118753a.png",
+    "static/media/PartnersDiscountsList.module.scss": "/test-garpix/static/media/partnersDiscountsClipShape.130a46bc.svg",
     "static/media/republiс.9cf4f03c.png": "/test-garpix/static/media/republiс.9cf4f03c.png",
     "static/media/sberbankInsurenceLogo.849fdc59.png": "/test-garpix/static/media/sberbankInsurenceLogo.849fdc59.png",
+    "static/media/sberlogo.0df47fa2.svg": "/test-garpix/static/media/sberlogo.0df47fa2.svg",
     "static/media/Search.module.scss": "/test-garpix/static/media/searchIcon.5bc033a3.svg",
+    "static/media/singleOfferImg.740f1fc4.png": "/test-garpix/static/media/singleOfferImg.740f1fc4.png",
     "static/media/technoParkOffer.9d642ca5.png": "/test-garpix/static/media/technoParkOffer.9d642ca5.png",
     "static/media/tezLogo.a0394dc4.png": "/test-garpix/static/media/tezLogo.a0394dc4.png",
-    "static/media/tripsterLogo.30ddba45.png": "/test-garpix/static/media/tripsterLogo.30ddba45.png"
+    "static/media/tripsterLogo.30ddba45.png": "/test-garpix/static/media/tripsterLogo.30ddba45.png",
+    "static/media/vk.cc884e0e.svg": "/test-garpix/static/media/vk.cc884e0e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0ac8af68.js",
-    "static/js/2.aa87a878.chunk.js",
-    "static/css/main.acd612a7.chunk.css",
-    "static/js/main.5ff2bb25.chunk.js"
+    "static/js/2.57fcad8f.chunk.js",
+    "static/css/main.f7cc02ce.chunk.css",
+    "static/js/main.d82cdfe9.chunk.js"
   ]
 }
