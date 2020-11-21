@@ -8,7 +8,7 @@ function Routes(props){
     <Switch>
       {/* У нас только две страницы, сразу на одну из них переключимся */}
       <Route exact path="/" 
-            render={ () => <Redirect to="/offer"/>}/>
+            render={ () => <Redirect to="/partners"/>}/>
 
       <Route path ="/partners" 
           render={() => <PartnersPage/>}/>
