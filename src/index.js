@@ -11,11 +11,11 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter> {/* HashRouter для gh-pages */}
+    <HashRouter> {/* HashRouter для gh-pages */}
       <Provider store={store}>
         <App />
       </Provider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
