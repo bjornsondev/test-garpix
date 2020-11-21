@@ -11,19 +11,18 @@ import ModalCityList from './ModalCityList';
 
 
 
-function CityToggle(props){
+function CityToggle(){
   const dispatch = useDispatch();
   const state = useSelector( state => state.cityToggle);
   
   const setModalOpen = () => {
     dispatch(setIsCityModalOpen(!state.isCityModalOpen));
-  }
+  };
 
   useEffect( () => {
     dispatch(setHeaderCityList());
   }, []);
 
-  
   return (
     <div className={s.cityToggle}>
       <button 

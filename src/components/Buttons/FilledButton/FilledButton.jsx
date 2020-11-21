@@ -9,9 +9,7 @@ function FilledButton({className, children, ...props}){
     <button 
       {...props} 
       className={cs.commonBtn + " " + s.btn + " " + className}
-    >
-      {children}
-    </button>
+    >{children}</button>
   )
 };
 

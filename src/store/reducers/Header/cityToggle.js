@@ -4,7 +4,7 @@ import { SET_CITY_LIST, SET_IS_CITY_MODAL_OPEN,
 const initialState = {
   currentCity: "",
   cityList: [],
-  isCityModalOpen: false,// Нужно не забыть поменять на true
+  isCityModalOpen: true,
   isAcceptanceModal: true
 }
 
@@ -34,6 +34,7 @@ function cityToggle( state = initialState, action) {
         ...state,
         isAcceptanceModal: action.toggle
       };
+      
     default: 
       return state;
   }

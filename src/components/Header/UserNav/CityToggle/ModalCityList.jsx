@@ -1,4 +1,3 @@
-import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import setCurrentCity from '../../../../store/actions/Header/setCurrentCity';
@@ -8,7 +7,7 @@ import setIsAcceptanceModal from '../../../../store/actions/Header/setIsAcceptan
 import s from './CityToggle.module.scss';
   
 
-function ModalCityList(props){
+function ModalCityList(){
   const state = useSelector( state => state.cityToggle);
   const dispatch = useDispatch();
 

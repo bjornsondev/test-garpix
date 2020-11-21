@@ -13,6 +13,7 @@ export const SET_SHORT_CATEGORY_LIST = "SET_SHORT_CATEGORY_LIST";
 export const SET_PARTNERS_LIST = "SET_PARTNERS_LIST"; 
 // Partners Page - Offers
 export const SET_OFFERS_LIST = "SET_OFFERS_LIST"; 
+
 // SingleOfferPage
 export const SET_SINGLE_OFFER_PAGE = "SET_SINGLE_OFFER_PAGE"; 
 

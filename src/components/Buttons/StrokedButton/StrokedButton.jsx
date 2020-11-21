@@ -1,4 +1,3 @@
-import React from 'react';
 import s from './StrokedButton.module.scss';
 import cs from '../Common.module.scss';
 
@@ -9,9 +8,7 @@ function StrokedButton({className, children, ...props}){
     <button 
       {...props} 
       className={cs.commonBtn + " " + s.btn + " " + className}
-    >
-      {children}
-    </button>
+    >{children}</button>
   )
 };
 

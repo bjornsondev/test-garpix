@@ -1,10 +1,10 @@
-import React from 'react';
 import s from './OfferCard.module.scss';
 
 
 
-function OfferCard({className, bigImg, thumbnail, partnerName, text, isUl = false, isArticle = false}){
-  const Card = isUl ? "li" : isArticle ? "article" : "div";
+function OfferCard({className, bigImg, thumbnail, partnerName, 
+                    text, isUl = false, isArticle = false}){
+  const Card = isUl ? "li" : isArticle ? "article" : "div"; 
   
   return (
     <Card className={s.card + " " + className}>

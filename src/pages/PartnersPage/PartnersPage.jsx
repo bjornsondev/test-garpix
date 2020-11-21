@@ -1,12 +1,14 @@
-import React from 'react';
 import { useSelector } from 'react-redux';
-import PageHeading from '../../components/Headings/PageHeading/PageHeading';
+
 import SectionHeading from '../../components/Headings/SectionHeading/SectionHeading';
+
+import s from './PartnersPage.module.scss';
+
+import OffersList from './OffersList/OffersList';
 import PartnersDiscounts from './PartnersDiscounts/PartnersDiscounts';
 import CategoryItems from './CategoryItems/CategoryItems';
 import CategoryPartnersList from './CategoryPartnersList/CategoryPartnersList';
-import OffersList from './OffersList/OffersList';
-import s from './PartnersPage.module.scss';
+import PageHeading from '../../components/Headings/PageHeading/PageHeading';
 import SpasiboTypeToggle from './SpasiboTypeToggle/SpasiboTypeToggle';
 
 

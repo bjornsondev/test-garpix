@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import PartnerCard from '../../../components/PartnerCard/PartnerCard';
+
 import setPartnersList from '../../../store/actions/PartnersPage/Category/setPartnersList';
+
 import s from './CategoryPartnersList.module.scss';
+
+import PartnerCard from '../../../components/PartnerCard/PartnerCard';
 import ShowMoreBtn from '../../../components/Buttons/ShowMoreBtn/ShowMoreBtn';
 
 
-function CategoryPartnersList(props){
+function CategoryPartnersList(){
   const state = useSelector( state => state.category);
   const dispatch = useDispatch();
   const [isShowMore, setIsShowMore] = useState(false);

@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import PageHeading from '../../components/Headings/PageHeading/PageHeading';
+
 import setSingleOfferPage from '../../store/actions/SingeOfferPage/setSingleOfferPage';
-import PartnerInfoItems from './PartnerInfoItems/PartnerInfoItems';
+
 import s from './SingleOfferPage.module.scss';
 
+import PartnerInfoItems from './PartnerInfoItems/PartnerInfoItems';
+import PageHeading from '../../components/Headings/PageHeading/PageHeading';
 
 // Допустим
 // У нас в админке есть редактор текста, и мы в нем будем вбивать содержимое,всякими кнопочками
@@ -22,7 +24,7 @@ import s from './SingleOfferPage.module.scss';
 // Ну и страница с гет параметров будет генерироваться разумеется
 
 
-function SingleOfferPage(props){
+function SingleOfferPage(){
 
   const state = useSelector( state => state.singleOfferPage.currentOffer);
   const dispatch = useDispatch();
@@ -44,7 +46,11 @@ function SingleOfferPage(props){
 
       <section className={s.partnerFullInfo}>
         <img src={state.img} alt={state.name}/>
-        <p className={s.dateFromTo}>С {state.dateFrom} по {state.dateTo}</p>
+
+        <p className={s.dateFromTo}>
+          С {state.dateFrom} по {state.dateTo}
+        </p>
+
         <div 
           className={s.content}
           dangerouslySetInnerHTML={{ __html: state.content }} 

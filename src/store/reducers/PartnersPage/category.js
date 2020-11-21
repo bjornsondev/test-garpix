@@ -1,4 +1,5 @@
-const { SET_CATEGORY_LIST, SET_CURRENT_CATEGORY, SET_PARTNERS_LIST, SET_SPASIBO_TYPE } = require("../../../constants/constants");
+import { SET_CATEGORY_LIST, SET_CURRENT_CATEGORY, 
+         SET_PARTNERS_LIST, SET_SPASIBO_TYPE } from '../../../constants/constants';
 
 const initialState = {
   categories: [],

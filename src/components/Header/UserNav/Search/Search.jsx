@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import s from './Search.module.scss';
 
 
-function Search(props){
+function Search(){
   const [isSearchActive, setIsSearchActive] = useState(false);
   const [searchInputValue, setSearchInputValue] = useState("");
 

@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import OfferCard from '../../../components/OfferCard/OfferCard';
+
 import setOffersList from '../../../store/actions/PartnersPage/Offers/setOffersList';
+
 import s from './OffersList.module.scss';
+
+import OfferCard from '../../../components/OfferCard/OfferCard';
 import ShowMoreBtn from '../../../components/Buttons/ShowMoreBtn/ShowMoreBtn';
 
 
-function OffersList(props){
+function OffersList(){
   const state = useSelector( state => state.offers );
   const dispatch = useDispatch();
   const [isShowMore, setIsShowMore] = useState(false);

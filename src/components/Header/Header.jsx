@@ -8,7 +8,7 @@ import SiteNavLinks from '../SiteNavLinks/SiteNavLinks';
 import UserNav from './UserNav/UserNav';
 
 
-function Header(props){
+function Header(){
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
 
   let activeBurgerStyle = isOpenMobileMenu ? s.closeMenu : "",

@@ -6,7 +6,7 @@ import StrokedButton from '../../../Buttons/StrokedButton/StrokedButton';
 
 
 
-function LoginButton(props){
+function LoginButton(){
   const [isDefinedUser, setIsDefinedUser] = useState(false);
   
   return (

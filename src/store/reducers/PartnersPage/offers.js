@@ -1,4 +1,4 @@
-const { SET_OFFERS_LIST } = require("../../../constants/constants");
+import { SET_OFFERS_LIST } from '../../../constants/constants';
 
 const initialState = {
   offersList: []

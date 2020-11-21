@@ -1,13 +1,15 @@
-import React from 'react';
-import FilledButton from '../../../Buttons/FilledButton/FilledButton';
-import StrokedButton from '../../../Buttons/StrokedButton/StrokedButton';
-import s from './CityToggle.module.scss';
-import setIsCityModalOpen from '../../../../store/actions/Header/setIsCityModalOpen';
-import setIsAcceptanceModal from '../../../../store/actions/Header/setIsAcceptanceModal';
 import { useDispatch, useSelector } from 'react-redux';
 
+import setIsCityModalOpen from '../../../../store/actions/Header/setIsCityModalOpen';
+import setIsAcceptanceModal from '../../../../store/actions/Header/setIsAcceptanceModal';
 
-function ModalAcceptance(props){
+import s from './CityToggle.module.scss';
+
+import StrokedButton from '../../../Buttons/StrokedButton/StrokedButton';
+import FilledButton from '../../../Buttons/FilledButton/FilledButton';
+
+
+function ModalAcceptance(){
   const state = useSelector( state => state.cityToggle);
   const dispatch = useDispatch();
 

@@ -35,6 +35,7 @@ function singleOfferPage(state = initialState, action) {
           content: `${action.currentOffer.content}`
         }
       };
+      
     default:
       return state;
   }

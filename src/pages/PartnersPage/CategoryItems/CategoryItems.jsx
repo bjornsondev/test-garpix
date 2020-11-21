@@ -10,7 +10,7 @@ import WhiteButton from '../../../components/Buttons/WhiteButton/WhiteButton';
 
 
 
-function CategoryItems(props){
+function CategoryItems(){
   const state = useSelector( state => state.category);
   const dispatch = useDispatch();
 

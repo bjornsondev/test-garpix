@@ -17,6 +17,7 @@ export default function setPartnersList(category, toggle) {
   else if(!toggle) { 
     partnersList = partnersList.filter( e => e.isReturnSpasibo && e.category.includes(category) )
   }
+  
   return {
     type: SET_PARTNERS_LIST,
     partnersList

@@ -7,13 +7,15 @@ import store from './store/store';
 
 import App from './App';
 
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter> {/* HashRouter для gh-pages */}
+    <BrowserRouter> {/* HashRouter для gh-pages */}
       <Provider store={store}>
         <App />
       </Provider>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

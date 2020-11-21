@@ -10,6 +10,13 @@ function Routes(props){
       <Route exact path="/" 
             render={ () => <Redirect to="/offer"/>}/>
 
+      <Route path ="/partners" 
+          render={() => <PartnersPage/>}/>
+      <Route path ="/offer" 
+          render={() => <SingleOfferPage/>}/>
+
+      {/* Сначала думал замапить массив, но они нужны пока просто как заглушки
+          поэтому просто продублирую, будет проще и понятней */}
       <Route path ="/discount" 
           render={() => <h1 className="container">Скидки и купоны</h1> }/>
       <Route path ="/impression" 
@@ -28,12 +35,6 @@ function Routes(props){
           render={() => <h1 className="container">Страхование</h1>}/>
       <Route path ="/how-to-enter" 
           render={() => <h1 className="container">Как подключиться</h1>}/>
-      <Route path ="/partners" 
-          render={() => <PartnersPage/>}/>
-
-
-      <Route path ="/offer" 
-          render={() => <SingleOfferPage/>}/>
     </Switch>
   )
 };
