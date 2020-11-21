@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/test-garpix/static/css/main.7fc9f839.chunk.css",
-    "main.js": "/test-garpix/static/js/main.22008d7d.chunk.js",
-    "main.js.map": "/test-garpix/static/js/main.22008d7d.chunk.js.map",
+    "main.js": "/test-garpix/static/js/main.fc50112c.chunk.js",
+    "main.js.map": "/test-garpix/static/js/main.fc50112c.chunk.js.map",
     "runtime-main.js": "/test-garpix/static/js/runtime-main.0ac8af68.js",
     "runtime-main.js.map": "/test-garpix/static/js/runtime-main.0ac8af68.js.map",
     "static/js/2.5c3dfb74.chunk.js": "/test-garpix/static/js/2.5c3dfb74.chunk.js",
@@ -45,6 +45,6 @@
     "static/js/runtime-main.0ac8af68.js",
     "static/js/2.5c3dfb74.chunk.js",
     "static/css/main.7fc9f839.chunk.css",
-    "static/js/main.22008d7d.chunk.js"
+    "static/js/main.fc50112c.chunk.js"
   ]
 }
